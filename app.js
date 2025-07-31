@@ -26,7 +26,7 @@ app.post("/slack/command", async (req, res) => {
     const args = breakdownTextToWords(text);
 
     if (args.length < 2) {
-      message = '☠️ _Invalid Input_\nUsage: /statuscode <refId>\nUsage: /agent <refId>';
+      message = '☠️ _Invalid Input_ ☠️\nUsage: /statuscode <refId>\nUsage: /agent <refId>';
     }
 
     const db = getDB();
